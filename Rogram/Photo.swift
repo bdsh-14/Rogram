@@ -13,7 +13,7 @@ struct Photo: Identifiable, Decodable {
 		case thumbnailUrlString = "thumbnailUrl"
 	}
 
-	var url: URL? {
+	var detailImageUrl: URL? {
 		guard let url = URL(string: urlString) else { return nil }
 		return url
 	}

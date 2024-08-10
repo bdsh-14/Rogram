@@ -5,7 +5,7 @@ struct PhotosListView: View {
 	
 	var body: some View {
 		List(viewModel.photosList) { item in
-			PhotosRowCell(picture: item)
+			PhotosRowCell(photo: item)
 				.alignmentGuide(.listRowSeparatorLeading, computeValue: { dimension in
 					dimension[.leading]
 				})

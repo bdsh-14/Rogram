@@ -1,15 +1,15 @@
 import SwiftUI
 
 struct PhotosRowCell: View {
-	let picture: Photo
+	let photo: Photo
 
     var body: some View {
 		VStack {
-			AsyncImage(url: picture.thumbnailUrl)
+			AsyncImage(url: photo.thumbnailUrl)
 				.frame(width: 300, height: 400)
 				.border(Color.secondary)
 			HStack {
-				Text(picture.title).textCase(.uppercase)
+				Text(photo.title).textCase(.uppercase)
 					.font(.subheadline)
 
 				Spacer()
@@ -23,5 +23,5 @@ struct PhotosRowCell: View {
 }
 
 #Preview {
-	PhotosRowCell(picture: mockPhotos[0])
+	PhotosRowCell(photo: mockPhotos[0])
 }
