@@ -10,10 +10,10 @@ struct PhotoDetailView: View {
 			} placeholder: {
 				Image(systemName: "photo")
 					.resizable()
-					.symbolRenderingMode(.hierarchical)
-					.foregroundStyle(Color.gray.opacity(0.3))
+					.symbolRenderingMode(.monochrome)
+					.foregroundStyle(Color.indigo.opacity(0.4))
 			}
-			.frame(width: 500, height: 500)
+			.frame(width: 400, height: 500)
 			Text(photo.title).textCase(.uppercase)
 				.font(.headline)
 				.padding(EdgeInsets(top: 8, leading: 20, bottom: 0, trailing: 12))

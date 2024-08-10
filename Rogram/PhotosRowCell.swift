@@ -5,9 +5,15 @@ struct PhotosRowCell: View {
 
     var body: some View {
 		VStack {
-			AsyncImage(url: photo.thumbnailUrl)
-				.frame(width: 300, height: 400)
-				.border(Color.secondary)
+			AsyncImage(url: photo.thumbnailUrl) { image in
+				image.resizable()
+			} placeholder: {
+				Image(systemName: "photo.on.rectangle")
+					.resizable()
+					.symbolRenderingMode(.monochrome)
+					.foregroundStyle(Color.indigo.opacity(0.4))
+			}
+			.frame(width: 300, height: 400)
 			HStack(alignment: .firstTextBaseline)
 			{
 				Text(photo.title).textCase(.uppercase)
