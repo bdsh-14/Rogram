@@ -1,3 +1,4 @@
+import Kingfisher
 import SwiftUI
 
 struct PhotosListView: View {

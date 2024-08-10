@@ -1,19 +1,18 @@
 import SwiftUI
+import Kingfisher
 
 struct PhotosRowCell: View {
 	let photo: Photo
 
-    var body: some View {
+	var body: some View {
 		VStack {
-			AsyncImage(url: photo.thumbnailUrl) { image in
-				image.resizable()
-			} placeholder: {
-				Image(systemName: "photo.on.rectangle")
-					.resizable()
-					.symbolRenderingMode(.monochrome)
-					.foregroundStyle(Color.indigo.opacity(0.4))
-			}
-			.frame(width: 300, height: 400)
+			KFImage(photo.thumbnailUrl)
+				.resizable()
+				.placeholder({
+					ProgressView()
+						.progressViewStyle(CircularProgressViewStyle())
+				})
+				.frame(width: 300, height: 400)
 			HStack(alignment: .firstTextBaseline)
 			{
 				Text(photo.title).textCase(.uppercase)
@@ -34,7 +33,7 @@ struct PhotosRowCell: View {
 			}
 			.padding(EdgeInsets(top: 8, leading: 20, bottom: 0, trailing: 12))
 		}
-    }
+	}
 }
 
 #Preview {
