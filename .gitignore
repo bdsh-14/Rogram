@@ -1,0 +1,7 @@
+# Xcode settings
+*.xcsettings
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode User Data
+**/*.xcuserdata/
