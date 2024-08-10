@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270235132C67D4CD00402E20 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270235122C67D4CD00402E20 /* Photo.swift */; };
+		270235152C67D74A00402E20 /* PhotosRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270235142C67D74A00402E20 /* PhotosRowCell.swift */; };
 		279112EF2C67D06100AE1B87 /* RogramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112EE2C67D06100AE1B87 /* RogramApp.swift */; };
-		279112F12C67D06100AE1B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112F02C67D06100AE1B87 /* ContentView.swift */; };
+		279112F12C67D06100AE1B87 /* PhotosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112F02C67D06100AE1B87 /* PhotosListView.swift */; };
 		279112F32C67D06200AE1B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279112F22C67D06200AE1B87 /* Assets.xcassets */; };
 		279112F62C67D06200AE1B87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279112F52C67D06200AE1B87 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270235122C67D4CD00402E20 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		270235142C67D74A00402E20 /* PhotosRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosRowCell.swift; sourceTree = "<group>"; };
 		279112EB2C67D06100AE1B87 /* Rogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279112EE2C67D06100AE1B87 /* RogramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramApp.swift; sourceTree = "<group>"; };
-		279112F02C67D06100AE1B87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		279112F02C67D06100AE1B87 /* PhotosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListView.swift; sourceTree = "<group>"; };
 		279112F22C67D06200AE1B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279112F52C67D06200AE1B87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,9 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				279112EE2C67D06100AE1B87 /* RogramApp.swift */,
-				279112F02C67D06100AE1B87 /* ContentView.swift */,
+				279112F02C67D06100AE1B87 /* PhotosListView.swift */,
 				279112F22C67D06200AE1B87 /* Assets.xcassets */,
 				279112F42C67D06200AE1B87 /* Preview Content */,
+				270235122C67D4CD00402E20 /* Photo.swift */,
+				270235142C67D74A00402E20 /* PhotosRowCell.swift */,
 			);
 			path = Rogram;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279112F12C67D06100AE1B87 /* ContentView.swift in Sources */,
+				270235132C67D4CD00402E20 /* Photo.swift in Sources */,
+				279112F12C67D06100AE1B87 /* PhotosListView.swift in Sources */,
 				279112EF2C67D06100AE1B87 /* RogramApp.swift in Sources */,
+				270235152C67D74A00402E20 /* PhotosRowCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
