@@ -13,8 +13,20 @@ struct PhotosRowCell: View {
 					.font(.subheadline)
 
 				Spacer()
-				Button("", systemImage: "heart") {
+				Button {
 					print("Button pressed")
+				} label: {
+					Label(
+						title: { Text("") },
+						icon: {
+							Image(systemName: "heart.fill")
+								.resizable()
+								.frame(width: 20, height: 20)
+								.symbolRenderingMode(.multicolor)
+								.fontWeight(.bold)
+								.foregroundStyle(Color.red)
+						}
+					)
 				}
 			}
 			.padding(EdgeInsets(top: 8, leading: 20, bottom: 0, trailing: 12))
