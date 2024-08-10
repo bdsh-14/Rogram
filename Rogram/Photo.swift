@@ -6,15 +6,23 @@ struct Photo: Identifiable, Decodable {
 	let urlString: String
 	let thumbnailUrlString: String
 
+	enum CodingKeys: String, CodingKey {
+		case id
+		case title
+		case urlString = "url"
+		case thumbnailUrlString = "thumbnailUrl"
+	}
+
 	var url: URL? {
 		guard let url = URL(string: urlString) else { return nil }
 		return url
 	}
 
 	var thumbnailUrl: URL? {
-		guard let thumbnailUrl = URL(string: urlString) else { return nil }
+		guard let thumbnailUrl = URL(string: thumbnailUrlString) else { return nil }
 		return thumbnailUrl
 	}
+}
 
 	// TODO: Remove later
 
