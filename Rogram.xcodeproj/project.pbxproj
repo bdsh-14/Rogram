@@ -22,6 +22,7 @@
 		27D7B94E2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */; };
 		27D7B9552C68595F00DBBD03 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B9542C68595F00DBBD03 /* TitleView.swift */; };
 		27D7B9572C68610300DBBD03 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B9562C68610300DBBD03 /* DismissButton.swift */; };
+		27D7B95B2C68678000DBBD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D7B95A2C68678000DBBD03 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailLoadingView.swift; sourceTree = "<group>"; };
 		27D7B9542C68595F00DBBD03 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		27D7B9562C68610300DBBD03 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		27D7B95A2C68678000DBBD03 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		279112ED2C67D06100AE1B87 /* Rogram */ = {
 			isa = PBXGroup;
 			children = (
+				27D7B95A2C68678000DBBD03 /* LaunchScreen.storyboard */,
 				279112EE2C67D06100AE1B87 /* RogramApp.swift */,
 				27D7B94F2C68524900DBBD03 /* Models */,
 				27D7B9522C6852EA00DBBD03 /* Managers */,
@@ -205,6 +208,7 @@
 			files = (
 				279112F62C67D06200AE1B87 /* Preview Assets.xcassets in Resources */,
 				279112F32C67D06200AE1B87 /* Assets.xcassets in Resources */,
+				27D7B95B2C68678000DBBD03 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,8 +370,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,8 +405,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
