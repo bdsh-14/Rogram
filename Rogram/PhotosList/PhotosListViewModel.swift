@@ -13,7 +13,7 @@ class PhotosListViewModel: ObservableObject {
 		do {
 			photosList = try await networkManager.fetchPhotosList()
 		} catch(let error) {
-			print(error)
+			print(error.localizedDescription)
 		}
 	}
 }

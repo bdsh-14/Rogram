@@ -70,17 +70,13 @@
 			isa = PBXGroup;
 			children = (
 				279112EE2C67D06100AE1B87 /* RogramApp.swift */,
-				279112F02C67D06100AE1B87 /* PhotosListView.swift */,
+				27D7B94F2C68524900DBBD03 /* Models */,
+				27D7B9522C6852EA00DBBD03 /* Managers */,
+				27D7B9502C68526400DBBD03 /* PhotosList */,
+				27D7B9512C68528600DBBD03 /* PhotosDetail */,
+				27D7B9532C68530000DBBD03 /* Helpers */,
 				279112F22C67D06200AE1B87 /* Assets.xcassets */,
 				279112F42C67D06200AE1B87 /* Preview Content */,
-				270235122C67D4CD00402E20 /* Photo.swift */,
-				270235142C67D74A00402E20 /* PhotosRowCell.swift */,
-				270235162C67DC9300402E20 /* NetworkManager.swift */,
-				270235182C67E27300402E20 /* PhotosListViewModel.swift */,
-				2702351C2C67EFB000402E20 /* PhotoDetailView.swift */,
-				270235232C6837BB00402E20 /* RemoteImage.swift */,
-				270235252C6848C700402E20 /* PhotosRowLoadingCell.swift */,
-				27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */,
 			);
 			path = Rogram;
 			sourceTree = "<group>";
@@ -91,6 +87,50 @@
 				279112F52C67D06200AE1B87 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27D7B94F2C68524900DBBD03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				270235122C67D4CD00402E20 /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27D7B9502C68526400DBBD03 /* PhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				279112F02C67D06100AE1B87 /* PhotosListView.swift */,
+				270235142C67D74A00402E20 /* PhotosRowCell.swift */,
+				270235182C67E27300402E20 /* PhotosListViewModel.swift */,
+				270235252C6848C700402E20 /* PhotosRowLoadingCell.swift */,
+			);
+			path = PhotosList;
+			sourceTree = "<group>";
+		};
+		27D7B9512C68528600DBBD03 /* PhotosDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2702351C2C67EFB000402E20 /* PhotoDetailView.swift */,
+				27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */,
+			);
+			path = PhotosDetail;
+			sourceTree = "<group>";
+		};
+		27D7B9522C6852EA00DBBD03 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				270235162C67DC9300402E20 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		27D7B9532C68530000DBBD03 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				270235232C6837BB00402E20 /* RemoteImage.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,9 +367,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.Rogram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,9 +400,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.Rogram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
