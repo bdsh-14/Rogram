@@ -22,7 +22,7 @@ struct TitleView: View {
 				}
 			)
 		}
-		.padding(EdgeInsets(top: 8, leading: 20, bottom: 0, trailing: 12))
+		.padding(EdgeInsets(top: 8, leading: 20, bottom: 10, trailing: 12))
 	}
 }
 

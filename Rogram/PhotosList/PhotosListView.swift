@@ -13,18 +13,15 @@ struct PhotosListView: View {
 						selectedPhotoId = item.id
 						isShowingDetailView = true
 					}
-					.alignmentGuide(.listRowSeparatorLeading) { dimension in
-						dimension[.leading]
-					}
-					.listRowSeparatorTint(.secondary)
 					.listStyle(.plain)
+					.listRowSeparator(.hidden)
 					.listRowBackground(Color.clear)
 			}
 			.task {
 				await viewModel.fetchPhotosList()
 			}
 			.navigationTitle("Ro")
-			.sheet(isPresented: $isShowingDetailView) {
+			.fullScreenCover(isPresented: $isShowingDetailView) {
 				if let selectedPhoto = viewModel.photosList.first(where: { $0.id == selectedPhotoId }) {
 					PhotoDetailView(photo: selectedPhoto)
 						.presentationDragIndicator(.visible)

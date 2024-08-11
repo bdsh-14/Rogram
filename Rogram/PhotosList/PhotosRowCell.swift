@@ -7,9 +7,13 @@ struct PhotosRowCell: View {
 		VStack {
 			RemoteImage(url: photo.thumbnailUrl,
 						loadingView: PhotosRowLoadingCell())
-				.frame(width: 300, height: 400)
+				.frame(width: 300, height: 350)
 			TitleView(title: photo.title)
 		}
+		.background(Color.white)
+		.cornerRadius(10)
+		.shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 3)
+		.border(Color.gray, width: 1)
 	}
 }
 
