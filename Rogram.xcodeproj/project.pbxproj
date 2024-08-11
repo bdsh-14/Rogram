@@ -13,10 +13,13 @@
 		270235192C67E27300402E20 /* PhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270235182C67E27300402E20 /* PhotosListViewModel.swift */; };
 		2702351D2C67EFB000402E20 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2702351C2C67EFB000402E20 /* PhotoDetailView.swift */; };
 		270235202C682A0600402E20 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2702351F2C682A0600402E20 /* Kingfisher */; };
+		270235242C6837BB00402E20 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270235232C6837BB00402E20 /* RemoteImage.swift */; };
+		270235262C6848C700402E20 /* PhotosRowLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270235252C6848C700402E20 /* PhotosRowLoadingCell.swift */; };
 		279112EF2C67D06100AE1B87 /* RogramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112EE2C67D06100AE1B87 /* RogramApp.swift */; };
 		279112F12C67D06100AE1B87 /* PhotosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112F02C67D06100AE1B87 /* PhotosListView.swift */; };
 		279112F32C67D06200AE1B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279112F22C67D06200AE1B87 /* Assets.xcassets */; };
 		279112F62C67D06200AE1B87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279112F52C67D06200AE1B87 /* Preview Assets.xcassets */; };
+		27D7B94E2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +28,14 @@
 		270235162C67DC9300402E20 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		270235182C67E27300402E20 /* PhotosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewModel.swift; sourceTree = "<group>"; };
 		2702351C2C67EFB000402E20 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		270235232C6837BB00402E20 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		270235252C6848C700402E20 /* PhotosRowLoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosRowLoadingCell.swift; sourceTree = "<group>"; };
 		279112EB2C67D06100AE1B87 /* Rogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279112EE2C67D06100AE1B87 /* RogramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramApp.swift; sourceTree = "<group>"; };
 		279112F02C67D06100AE1B87 /* PhotosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListView.swift; sourceTree = "<group>"; };
 		279112F22C67D06200AE1B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279112F52C67D06200AE1B87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				270235162C67DC9300402E20 /* NetworkManager.swift */,
 				270235182C67E27300402E20 /* PhotosListViewModel.swift */,
 				2702351C2C67EFB000402E20 /* PhotoDetailView.swift */,
+				270235232C6837BB00402E20 /* RemoteImage.swift */,
+				270235252C6848C700402E20 /* PhotosRowLoadingCell.swift */,
+				27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */,
 			);
 			path = Rogram;
 			sourceTree = "<group>";
@@ -163,10 +172,13 @@
 				270235132C67D4CD00402E20 /* Photo.swift in Sources */,
 				279112F12C67D06100AE1B87 /* PhotosListView.swift in Sources */,
 				2702351D2C67EFB000402E20 /* PhotoDetailView.swift in Sources */,
+				270235262C6848C700402E20 /* PhotosRowLoadingCell.swift in Sources */,
 				270235172C67DC9300402E20 /* NetworkManager.swift in Sources */,
 				279112EF2C67D06100AE1B87 /* RogramApp.swift in Sources */,
 				270235152C67D74A00402E20 /* PhotosRowCell.swift in Sources */,
+				270235242C6837BB00402E20 /* RemoteImage.swift in Sources */,
 				270235192C67E27300402E20 /* PhotosListViewModel.swift in Sources */,
+				27D7B94E2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
