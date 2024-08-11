@@ -9,9 +9,9 @@ class PhotosListViewModel: ObservableObject {
 		self.networkManager = networkManager
 	}
 
-	func fetchAllPhotos() async {
+	func fetchPhotosList() async {
 		do {
-			photosList = try await networkManager.fetchPhotos()
+			photosList = try await networkManager.fetchPhotosList()
 		} catch(let error) {
 			print(error)
 		}

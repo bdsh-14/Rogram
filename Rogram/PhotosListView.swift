@@ -21,7 +21,7 @@ struct PhotosListView: View {
 					.listRowBackground(Color.clear)
 			}
 			.task {
-				await viewModel.fetchAllPhotos()
+				await viewModel.fetchPhotosList()
 			}
 			.navigationTitle("Ro")
 			.background(Color.clear)

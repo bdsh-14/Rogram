@@ -1,7 +1,7 @@
 import Foundation
 
 protocol NetworkManagerInterface {
-	func fetchPhotos() async throws -> [Photo]
+	func fetchPhotosList() async throws -> [Photo]
 }
 
 class NetworkManager: NetworkManagerInterface {
@@ -11,7 +11,7 @@ class NetworkManager: NetworkManagerInterface {
 		self.session = session
 	}
 	
-	func fetchPhotos() async throws -> [Photo] {
+	func fetchPhotosList() async throws -> [Photo] {
 		guard let url = URL(string: "https://jsonplaceholder.typicode.com/album/1/photos") else {
 			preconditionFailure("Invalid URL !!")
 		}
