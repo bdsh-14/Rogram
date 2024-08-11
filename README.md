@@ -70,9 +70,8 @@ With more time, the following enhancements could be made:
 
 | Home screen | Detail Screen |
 |:--:|:--:|
-|<img src=https://github.com/user-attachments/assets/33719bc4-a621-4cfa-9149-d2f31a167d3a width=250 />|<img src=https://github.com/user-attachments/assets/d5e5d66d-3335-44a4-9510-971fc0f73ddf width=250 />|
+|<img src=https://github.com/user-attachments/assets/eaafdea2-49e7-49c6-9207-dc66c7e457c8 width=250 />|<img src=https://github.com/user-attachments/assets/905386e0-f44f-43a5-b4ac-ded1af382404 width=250 />|
 
-   
 ## Contact
 
 - Email: bdsh.14@gmail.com
