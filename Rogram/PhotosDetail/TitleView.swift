@@ -25,3 +25,7 @@ struct TitleView: View {
 		.padding(EdgeInsets(top: 8, leading: 20, bottom: 0, trailing: 12))
 	}
 }
+
+#Preview {
+	TitleView(title: "accusamus beatae ad facilis cum similique qui sunt")
+}

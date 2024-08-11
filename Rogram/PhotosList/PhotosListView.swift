@@ -27,6 +27,7 @@ struct PhotosListView: View {
 			.sheet(isPresented: $isShowingDetailView) {
 				if let selectedPhoto = viewModel.photosList.first(where: { $0.id == selectedPhotoId }) {
 					PhotoDetailView(photo: selectedPhoto)
+						.presentationDragIndicator(.visible)
 				}
 			}
 		}
