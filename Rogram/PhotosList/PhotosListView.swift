@@ -1,8 +1,7 @@
-import Kingfisher
 import SwiftUI
 
 struct PhotosListView: View {
-	@StateObject var viewModel = PhotosListViewModel()
+	@StateObject private var viewModel = PhotosListViewModel()
 	@State private var isShowingDetailView: Bool = false
 	@State private var selectedPhotoId: Int?
 
@@ -14,9 +13,10 @@ struct PhotosListView: View {
 						selectedPhotoId = item.id
 						isShowingDetailView = true
 					}
-					.alignmentGuide(.listRowSeparatorLeading, computeValue: { dimension in
+					.alignmentGuide(.listRowSeparatorLeading) { dimension in
 						dimension[.leading]
-					})
+					}
+					.listRowSeparatorTint(.secondary)
 					.listStyle(.plain)
 					.listRowBackground(Color.clear)
 			}
@@ -24,7 +24,6 @@ struct PhotosListView: View {
 				await viewModel.fetchPhotosList()
 			}
 			.navigationTitle("Ro")
-			.background(Color.clear)
 			.sheet(isPresented: $isShowingDetailView) {
 				if let selectedPhoto = viewModel.photosList.first(where: { $0.id == selectedPhotoId }) {
 					PhotoDetailView(photo: selectedPhoto)
@@ -35,5 +34,5 @@ struct PhotosListView: View {
 }
 
 #Preview {
-    PhotosListView()
+	PhotosListView()
 }

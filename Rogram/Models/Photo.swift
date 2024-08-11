@@ -23,26 +23,3 @@ struct Photo: Identifiable, Decodable {
 		return thumbnailUrl
 	}
 }
-
-// TODO: Remove later
-
-let mockData: [Photo?] = [
-	Photo(id: 1,
-		  title: "accusamus beatae ad facilis cum similique qui sunt",
-		  urlString: "https://via.placeholder.com/600/92c952",
-		  thumbnailUrlString: "https://via.placeholder.com/150/92c952"),
-	Photo(id: 2,
-		  title: "reprehenderit est deserunt velit ipsam",
-		  urlString: "https://via.placeholder.com/600/771796",
-		  thumbnailUrlString: "https://via.placeholder.com/150/771796"),
-	Photo(id: 3,
-		  title: "accusamus beatae ad facilis cum similique qui sunt",
-		  urlString: "https://via.placeholder.com/600/92c952",
-		  thumbnailUrlString: "https://via.placeholder.com/150/92c952"),
-	Photo(id: 4,
-		  title: "reprehenderit est deserunt velit ipsam",
-		  urlString: "https://via.placeholder.com/600/771796",
-		  thumbnailUrlString: "https://via.placeholder.com/150/771796")
-]
-
-let mockPhotos = mockData.compactMap({ $0 })
