@@ -21,6 +21,7 @@
 		279112F62C67D06200AE1B87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279112F52C67D06200AE1B87 /* Preview Assets.xcassets */; };
 		27D7B94E2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */; };
 		27D7B9552C68595F00DBBD03 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B9542C68595F00DBBD03 /* TitleView.swift */; };
+		27D7B9572C68610300DBBD03 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B9562C68610300DBBD03 /* DismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		279112F52C67D06200AE1B87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27D7B94D2C684EEA00DBBD03 /* PhotoDetailLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailLoadingView.swift; sourceTree = "<group>"; };
 		27D7B9542C68595F00DBBD03 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		27D7B9562C68610300DBBD03 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				270235232C6837BB00402E20 /* RemoteImage.swift */,
+				27D7B9562C68610300DBBD03 /* DismissButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				270235262C6848C700402E20 /* PhotosRowLoadingCell.swift in Sources */,
 				270235172C67DC9300402E20 /* NetworkManager.swift in Sources */,
 				279112EF2C67D06100AE1B87 /* RogramApp.swift in Sources */,
+				27D7B9572C68610300DBBD03 /* DismissButton.swift in Sources */,
 				270235152C67D74A00402E20 /* PhotosRowCell.swift in Sources */,
 				270235242C6837BB00402E20 /* RemoteImage.swift in Sources */,
 				27D7B9552C68595F00DBBD03 /* TitleView.swift in Sources */,

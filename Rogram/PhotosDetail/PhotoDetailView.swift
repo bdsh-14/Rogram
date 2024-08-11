@@ -5,6 +5,7 @@ struct PhotoDetailView: View {
 
 	var body: some View {
 		VStack {
+			DismissButton()
 			RemoteImage(url: photo.detailImageUrl, loadingView: PhotoDetailLoadingView())
 				.frame(width: 400, height: 500)
 			Text(photo.title).textCase(.uppercase)
