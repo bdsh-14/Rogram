@@ -1,17 +1,12 @@
 import SwiftUI
-import Kingfisher
 
 struct PhotosRowCell: View {
 	let photo: Photo
 
 	var body: some View {
 		VStack {
-			KFImage(photo.thumbnailUrl)
-				.resizable()
-				.placeholder({
-					ProgressView()
-						.progressViewStyle(CircularProgressViewStyle())
-				})
+			RemoteImage(url: photo.thumbnailUrl,
+						loadingView: PhotosRowLoadingCell())
 				.frame(width: 300, height: 400)
 			HStack(alignment: .firstTextBaseline)
 			{

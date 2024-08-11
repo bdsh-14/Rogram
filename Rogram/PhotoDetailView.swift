@@ -1,4 +1,3 @@
-import Kingfisher
 import SwiftUI
 
 struct PhotoDetailView: View {
@@ -6,14 +5,7 @@ struct PhotoDetailView: View {
 
 	var body: some View {
 		VStack {
-			KFImage(photo.detailImageUrl)
-				.resizable()
-				.placeholder({
-					ProgressView(value: 0.5) { Text("Downloading image...")}
-						.progressViewStyle(.circular)
-						.tint(.pink)
-						.frame(height: 150)
-				})
+			RemoteImage(url: photo.detailImageUrl, loadingView: PhotoDetailLoadingView())
 				.frame(width: 400, height: 500)
 			Text(photo.title).textCase(.uppercase)
 				.font(.headline)
