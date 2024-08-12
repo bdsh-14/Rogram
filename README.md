@@ -34,10 +34,10 @@ This project implements two views.
 
 ## Running the project
 
-1. Clone the repository or unzip the files
+1. Clone the repository or download as a zipfile
 
-    `git clone https://github.com/your-username/your-repo-name.git`
-    `cd your-repo-name`
+    `git clone https://github.com/bdsh-14/Rogram.git`
+    `cd Rogram.git`
 
 2. Install dependencies
 
