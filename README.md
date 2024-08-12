@@ -41,7 +41,7 @@ This project implements two views.
 
 2. Install dependencies
 
-    The project uses Swift Package Manager (SPM). After opening the project in Xcode, dependencies should automatically resolve. If not, go to File > Packages > Resolve Package Versions.
+    The project uses Swift Package Manager (SPM). After opening the project in Xcode, dependencies should automatically resolve. If not, go to `File` > `Packages` > `Resolve Package Versions`.
 
 3. Double-click on the .xcodeproj file to open the project.
 4. Build and run
