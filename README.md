@@ -64,7 +64,7 @@ With more time, the following enhancements could be made:
 1. Improve accessibility by adding VoiceOver support.
 2. Add Localization
 3. Error screens
-4. Option to `Like` images (using the heart label on list screen.
+4. Option to `Like` or save images as favorites (using the heart label on Home screen).
 
 ## Screenshots 
 
